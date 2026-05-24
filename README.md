@@ -1,4 +1,3 @@
-```markdown
 # 🌤️ Simple Weather Site (Jakarta)
 
 Aplikasi web/mobile berbasis **Ionic Vue** dan **TypeScript** yang menampilkan data prakiraan cuaca per jam untuk wilayah Jakarta secara real-time. Aplikasi ini dirancang dengan pendekatan UI/UX yang **minimalis namun tetap elegan**, mengutamakan kemudahan membaca informasi secara cepat dan instan.
