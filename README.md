@@ -21,13 +21,6 @@ Data cuaca dikonsumsi langsung dari layanan online **Open-Meteo API**.
 * **HTTP Client:** [Axios](https://axios-http.com/)
 * **Build Tool:** [Vite](https://vitejs.dev/)
 
-## 📂 Struktur File Utama
-
-Fokus utama logika pengambilan data (*fetching*) dan komponen antarmuka (*UI*) terletak pada file berikut:
-```bash
-src/
-└── views/
-    └── HomePage.vue  # Berisi logika Axios fetch, mapping data array, serta styling UI cuaca
 🛠️ Cara Menjalankan Proyek di Lokal
 Pastikan Anda sudah menginstal Node.js di perangkat Anda.
 
@@ -68,3 +61,48 @@ Proyek ini dibuat untuk keperluan demonstrasi/tugas pengembangan web dan bebas d
 1. **Penjelasan Konsep**: Memberi tahu pengunjung repositori bahwa aplikasi menggunakan desain *minimalist-elegant* sesuai permintaan Anda.
 2. **Keterbacaan Struktur**: Menyertakan pemetaan atribut data penting (`time` dan `temperature_2m`) agar sesuai dengan ketentuan pengerjaan tugas proyek.
 3. **Langkah Memulai (*Getting Started*)**: Panduan instalasi yang jelas (`npm install` dan `npm run dev`) sehingga orang lain atau dosen penguji dapat menjalankan kodingan Anda dengan mudah di komputer mereka.
+
+## 📂 Struktur File Utama
+
+Fokus utama logika pengambilan data (*fetching*) dan komponen antarmuka (*UI*) terletak pada file berikut:
+```bash
+simple-weather-site/
+├── .vscode/
+│   └── extensions.json          # Rekomendasi ekstensi VS Code untuk tim
+├── public/
+│   └── favicon.png              # Icon aplikasi yang muncul di tab browser
+├── src/                         # Folder utama kode sumber aplikasi
+│   ├── router/
+│   │   └── index.ts             # Pengaturan rute halaman (routing) Ionic Vue
+│   ├── theme/
+│   │   └── variables.css        # Pengaturan warna global dan tema aplikasi
+│   ├── views/
+│   │   └── HomePage.vue         # Halaman utama (logika API cuaca & tampilan minimalis)
+│   ├── App.vue                  # Komponen akar (root component) Vue
+│   ├── main.ts                  # Entry point utama aplikasi untuk inisialisasi Ionic
+│   └── vite-env.d.ts            # Deklarasi tipe data lingkungan untuk Vite
+├── tests/                       # Folder pengujian kode (testing)
+│   ├── e2e/                     # End-to-End testing menggunakan Cypress
+│   │   ├── fixtures/
+│   │   │   └── example.json
+│   │   ├── specs/
+│   │   │   └── test.cy.ts
+│   │   └── support/
+│   │       ├── commands.ts
+│   │       └── e2e.ts
+│   └── unit/                    # Unit testing untuk komponen terkecil
+│       └── example.spec.ts
+├── .browserslistrc              # Konfigurasi target kompatibilitas browser
+├── .eslintignore                # Daftar file/folder yang diabaikan oleh linter
+├── .eslintrc.cjs                # Konfigurasi aturan kualitas kode (ESLint)
+├── .gitignore                   # Daftar file yang diabaikan oleh Git (seperti node_modules)
+├── README.md                    # Dokumentasi utama proyek Anda
+├── capacitor.config.ts          # Konfigurasi Capacitor untuk build ke Android/iOS
+├── cypress.config.ts            # Konfigurasi untuk framework testing Cypress
+├── index.html                   # File HTML utama tempat aplikasi Vue di-mount
+├── ionic.config.json            # Konfigurasi proyek spesifik Ionic Framework
+├── package-lock.json            # Catatan versi detail dari dependensi yang terinstal
+├── package.json                 # Daftar dependensi pustaka (Axios, Ionic, Vue) dan script proyek
+├── tsconfig.json                # Konfigurasi utama compiler TypeScript
+├── tsconfig.node.json           # Konfigurasi TypeScript khusus untuk file node/vite
+└── vite.config.ts               # Konfigurasi server dan bundler menggunakan Vite
