@@ -38,8 +38,8 @@ Jalankan perintah berikut untuk membuka jalannya aplikasi di browser:
 
 Bash
 npm run dev
-# atau jika Anda menggunakan Ionic CLI:
-# ionic serve
+atau jika Anda menggunakan Ionic CLI:
+ionic serve
 Secara default, aplikasi akan berjalan di alamat http://localhost:5173/.
 
 🌐 Endpoint API yang Digunakan
