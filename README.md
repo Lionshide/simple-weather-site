@@ -45,22 +45,14 @@ Secara default, aplikasi akan berjalan di alamat http://localhost:5173/.
 🌐 Endpoint API yang Digunakan
 Aplikasi ini melakukan HTTP GET request ke alamat Open-Meteo berikut untuk mendapatkan data koordinat Jakarta:
 
-Plaintext
 [https://api.open-meteo.com/v1/forecast?latitude=-6.2&longitude=106.8&hourly=temperature_2m](https://api.open-meteo.com/v1/forecast?latitude=-6.2&longitude=106.8&hourly=temperature_2m)
+
 Data atribut yang ditampilkan dari API meliputi:
-
 time (Waktu pengukuran prakiraan)
-
 temperature_2m (Suhu per jam dalam satuan °C)
 
 📄 Lisensi
 Proyek ini dibuat untuk keperluan demonstrasi/tugas pengembangan web dan bebas digunakan ataupun dikembangkan kembali.
-
-
-### Poin Utama yang Dicakup dalam README ini:
-1. **Penjelasan Konsep**: Memberi tahu pengunjung repositori bahwa aplikasi menggunakan desain *minimalist-elegant* sesuai permintaan Anda.
-2. **Keterbacaan Struktur**: Menyertakan pemetaan atribut data penting (`time` dan `temperature_2m`) agar sesuai dengan ketentuan pengerjaan tugas proyek.
-3. **Langkah Memulai (*Getting Started*)**: Panduan instalasi yang jelas (`npm install` dan `npm run dev`) sehingga orang lain atau dosen penguji dapat menjalankan kodingan Anda dengan mudah di komputer mereka.
 
 ## 📂 Struktur File Utama
 
